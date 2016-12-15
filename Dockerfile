@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM ubuntu:trusty
+FROM ubuntu:latest
 MAINTAINER Acquia Engineering <engineering@acquia.com>
 
-ENV GOLANG_VERSION 1.5.1
+ENV GOLANG_VERSION 1.7.4
 ENV DEBIAN_FRONTEND noninteractive
 
 # Setup container dependencies
 RUN apt-get -y update && \
     apt-get -y install build-essential \
-	  dh-make debhelper cdbs python-support \
+	  dh-make debhelper cdbs dh-python \
       git mercurial curl \
 && apt-get clean && \
       rm -rf /var/cache/apt/* && \
