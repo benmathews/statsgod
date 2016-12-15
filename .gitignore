@@ -6,6 +6,8 @@
 # Folders
 _obj
 _test
+vendor
+output
 
 # Debian build
 debian/statsgod.debhelper.log
