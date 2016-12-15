@@ -23,7 +23,6 @@ group :test_legacy do
 end
 
 group :test_tip do
-  gom 'golang.org/x/tools/cmd/vet'
   gom 'golang.org/x/tools/cmd/cover'
 end
 
