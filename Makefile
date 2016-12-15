@@ -38,7 +38,7 @@ run: ${project}
 	go run -race ${project}.go
 
 $(project): deps
-	$(GOM) build -o $(GOPATH)/bin/statsgod
+	$(GOM) build -o output/statsgod
 
 deps: clean
 	$(GOM) -groups=$(GOM_GROUPS_FLAG) install
