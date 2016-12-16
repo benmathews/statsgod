@@ -35,3 +35,4 @@ _vendor/*
 
 coverage.out
 statsgod.coverprofile
+*~
